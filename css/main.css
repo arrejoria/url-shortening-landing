@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+body {
+  background-color: hsl(0deg, 0%, 75%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.body-container {
+  width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  display: block;
+  user-select: none;
+}
+
+input,
+button,
+textarea,
+select {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input[type=range] {
+  margin-block: 1.25rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/**
+ * Header Section Styles Starts Here -------------/
+ */
+/**
+* Main Section Styles Starts Here -------------/
+*/
+/**
+* URL Entry Section Styles Starts Here -------------/
+*/
+/**
+* Feature Section Styles Starts Here -------------/
+*/
+/**
+* CTA Section Styles Starts Here -------------/
+*/
+/**
+* Footer Section Styles Starts Here -------------/
+*/
+
+/*# sourceMappingURL=main.css.map */

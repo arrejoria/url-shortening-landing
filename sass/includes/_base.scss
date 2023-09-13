@@ -1,0 +1,38 @@
+
+html {
+  font-family: $ffa-primary;
+  font-size: 62.5%; // makes 1rem = 10px
+  scroll-behavior: smooth;
+  @media only screen and (min-width: $breakpoint-desktop) {
+    font-size: 70%;
+  }
+}
+
+// :root {
+//     & > body {
+//       background-image: url("../images/pattern-background-desktop.svg");
+
+//       @include mediaQuery(phone) {
+//         background-image: url("../images/pattern-background-mobile.svg");
+//       }
+//     }
+// }
+
+body {
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+#root {
+  @include flex-column;
+  @include flex-center;
+  width: 100%;
+  height: 100vh;
+}
+
+.body-container {
+  width: 1440px;
+}
+

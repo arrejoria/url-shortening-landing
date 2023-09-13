@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+
+// Primary
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// Primary Colors
+
+$primary-: hsl(180, 66%, 49%);
+$primary--: hsl(257, 27%, 26%);
+$secondary-: hsl(0, 87%, 67%);
+
+// Neutral Colors
+
+$gray: hsl(0, 0%, 75%);
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+// Fonts
+$ffa-primary: 'Poppins', sans-serif;
+// Body Copy
+$paragraph-size: 16px;
+
+$font-weight-1: 500;
+$font-weight-2: 700;
+
+
+// Breakpoint Sass Variables
+$breakpoint-mobile: 37.5em;
+$breakpoint-desktop: 90em;
+$breakpoint-desktop-medium: 105em;
+$breakpoint-desktop-large: 120em;
+$breakpoint-desktop-xlarge: 160em;
