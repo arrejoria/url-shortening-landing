@@ -1,9 +1,9 @@
-@import "includes/variables";
-@import "includes/mixins";
+@import "utils/variables";
+@import "utils/mixins";
 
-@import "includes/base";
-@import "includes/reset";
-@import "includes/typography";
+@import "utils/base";
+@import "utils/reset";
+@import "utils/typography";
 
 
 
@@ -12,6 +12,30 @@
  */
 
 .header {
+    padding: 3.7rem 0;
+    .navbar {
+        &__item {
+            a {
+                color: $grayish-violet;
+                font-weight: $font-weight-2;
+            }
+        }
+    }
+
+    .auth {
+
+        &__login, &__register {
+            font-weight: $font-weight-2;
+        }
+        &__login {
+            color: $grayish-violet;
+        }
+        &__register {
+            background-color: $primary-;
+            border-radius: 40px;
+            color: $white;
+        }
+    }
 }
 
 
@@ -19,14 +43,59 @@
  * Main Section Styles Starts Here -------------/
  */
 
+.main {
+    &__content {
+    }
+    &__title {
+        color: $very-dark-blue;
+        font-size: 4.6rem;
+        line-height: 1.1;
 
+    }
+
+    &__description {
+        padding-right: 4rem;
+        font-size: 1.3rem;
+    }
+
+    &__image {
+        position: relative;
+        // overflow: hidden;
+        img {
+            // position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__button {
+        background-color: $primary-;
+        border-radius: 40px;
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: $font-weight-2;
+        width: 100%;
+        max-width: 200px;
+    }
+}
 
 
  /**
  * URL Entry Section Styles Starts Here -------------/
  */
 
+.shortener {
+    position: relative;
 
+    &__form {
+        // position: absolute;
+        background-image: url("../assets/images/bg-shorten-desktop.webp");
+        background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; 
+        padding: 4rem 2rem;
+    }
+}
 
 
 

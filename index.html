@@ -44,7 +44,7 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 
-    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <!-- TODO: Update web app manifest file -->
 
     <meta name="theme-color" content="#FF00FF" />
@@ -63,16 +63,16 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="body-container">
 
-    <header class="header row flex bg-primary">
-      <div class="logo col-lg-3">
-        <img src="./assets/images/logo.svg" alt="Web Logo Image" width="200">
+    <header class="header row flex align-items-center" id="header">
+      <div class="logo col-lg d-flex">
+        <img src="./assets/images/logo.webp" alt="Web Logo Image" width="120">
       </div>
-      <nav class="navbar">
-        <ul class="navbar__list">
+      <nav class="navbar col-lg-7 d-flex justify-content-start px-0">
+        <ul class="navbar__list d-flex gap-4">
           <li class="navbar__item">
             <a class="" href="#">Features</a>
           </li>
@@ -86,15 +86,40 @@
           </li>
         </ul>
       </nav>
-      <div class="auth">
-        <a class="auth__login" href="#">Login</a>
-        <a class="auth__register" href="#">Sign Up</a>
+      <div class="auth col-lg-3 d-flex gap-2 justify-content-end">
+        <a class="auth__login btn py-2 px-4" href="#">Login</a>
+        <a class="auth__register btn p-2 px-4" href="#">Sign Up</a>
       </div>
     </header>
     <!-- Main Section Starts Here  -->
-    <main class="">
-
+    <main class="main row" id="main">
+      <div class="main__content col-12 col-lg-7 d-flex flex-column justify-content-center">
+        <h1 class="main__title">More than just shorter links</h1>
+        <p class="main__description mb-5">
+          Build your brand’s recognition and get detailed insights 
+          on how your links are performing.
+        </p>
+        <button class="main__button btn py-3 px-4" type="button">
+          Get Started
+        </button>
+      </div>
+      
+      <picture class="main__image col-12 col-lg-5">
+        <img src="/assets/images/illustration-working.webp" alt="Working desk illustration" width="700">
+      </picture>
     </main>
+
+    <!-- URL Entry Section Starts Here -->
+
+    <section class="shortener section" id="shortener">
+      <div class="shortener__form">
+        <form action="/" >
+          <input class="shortener__input" id="shortInput" type="text" name="shortener" placeholder="Shorten a link here...">
+          <button class="shortener__button" type="submit"> Shorten It!</button>
+        </form>
+      </div>
+    </section>
+
 
     <!-- Modernizr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -103,6 +128,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
     <!-- Your custom scripts -->
-    <script src="./js/script.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
