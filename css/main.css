@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 @media only screen and (min-width: 90em) {
   html {
@@ -20,13 +21,13 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  overflow: hidden;
   height: 100vh;
 }
 
 .body-container {
   margin: 0 auto;
-  padding: 0 12vw;
-  overflow: hidden;
+  padding: 0 10vw;
   width: 1440px;
 }
 
@@ -233,11 +234,30 @@ h6 {
   position: relative;
 }
 .shortener__form {
-  background-image: url("../assets/images/bg-shorten-desktop.webp");
+  position: absolute;
+  background-color: hsl(257deg, 27%, 26%);
+  background-image: url("../assets/images/bg-shorten-desktop.svg");
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-attachment: fixed;
-  padding: 4rem 2rem;
+  border-radius: 20px;
+  padding: 3.5rem 2rem;
+  width: 100%;
+}
+.shortener__input, .shortener__button {
+  font-size: 1.2rem;
+}
+.shortener__input {
+  background-color: #fff;
+  border-radius: 10px;
+  color: hsl(260deg, 8%, 14%);
+  width: 100%;
+  max-width: 70%;
+  z-index: 10;
+}
+.shortener__button {
+  background-color: hsl(180deg, 66%, 49%);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
 }
 
 /**
