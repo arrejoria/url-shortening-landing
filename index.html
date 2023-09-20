@@ -1,133 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | URL Shortening Landing Page</title>
-    <meta name="title" content="Frontend Mentor - URL Shortening Landing Page" />
-    <meta
-      name="description"
-      content="PROYECT DESCRIPTION OR SOMETHING ELSE ABOUT IT"
-    />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.example.com/" />
-    <meta property="og:title" content="Frontend Mentor - URL Shortening Landing Page" />
-    <meta
-      property="og:description"
-      content="With this free Link Shortener you can make Links shorter and easier to remember"
-    />
-    <meta
-      property="og:image"
-      content="SCREENSHOT OR IMAGE ABOUT THE PROYECT OR APP"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | URL Shortening Landing Page</title>
+  <meta name="title" content="Frontend Mentor - URL Shortening Landing Page" />
+  <meta name="description" content="PROYECT DESCRIPTION OR SOMETHING ELSE ABOUT IT" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.example.com/" />
-    <meta property="twitter:title" content="Frontend Mentor - URL Shortening Landing Page" />
-    <meta
-      property="twitter:description"
-      content="PROYECT DESCRIPTION OR SOMETHING ELSE ABOUT IT"
-    />
-    <meta
-      property="twitter:image"
-      content="SCREENSHOT OR IMAGE ABOUT THE PROYECT OR APP"
-    />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.example.com/" />
+  <meta property="og:title" content="Frontend Mentor - URL Shortening Landing Page" />
+  <meta property="og:description"
+    content="With this free Link Shortener you can make Links shorter and easier to remember" />
+  <meta property="og:image" content="SCREENSHOT OR IMAGE ABOUT THE PROYECT OR APP" />
 
-    <script>
-      document.documentElement.classList.remove("no-js");
-      document.documentElement.classList.add("js");
-    </script>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.example.com/" />
+  <meta property="twitter:title" content="Frontend Mentor - URL Shortening Landing Page" />
+  <meta property="twitter:description" content="PROYECT DESCRIPTION OR SOMETHING ELSE ABOUT IT" />
+  <meta property="twitter:image" content="SCREENSHOT OR IMAGE ABOUT THE PROYECT OR APP" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <script>
+    document.documentElement.classList.remove("no-js");
+    document.documentElement.classList.add("js");
+  </script>
 
-    <!-- <link rel="manifest" href="site.webmanifest" /> -->
-    <!-- TODO: Update web app manifest file -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 
-    <meta name="theme-color" content="#FF00FF" />
-    <!-- TODO: Update meta theme color -->
+  <!-- <link rel="manifest" href="site.webmanifest" /> -->
+  <!-- TODO: Update web app manifest file -->
 
-    <!-- Polyfill for older browsers -->
-    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+  <meta name="theme-color" content="#FF00FF" />
+  <!-- TODO: Update meta theme color -->
 
-    <!-- Fonts CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Polyfill for older browsers -->
+  <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Normalize -->
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body class="body-container">
+  <!-- Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
-    <header class="header row flex align-items-center" id="header">
-      <div class="logo col-lg d-flex">
-        <img src="./assets/images/logo.webp" alt="Web Logo Image" width="120">
-      </div>
-      <nav class="navbar col-lg-7 d-flex justify-content-start px-0">
-        <ul class="navbar__list d-flex gap-4">
-          <li class="navbar__item">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body class="body-container">
+
+  <header class="header row col-12 col-md-10 col-lg-10 flex align-items-center mx-auto" id="header">
+    <div class="logo col-10 col-md col-lg-2 d-flex">
+      <img src="./assets/images/logo.webp" alt="Web Logo Image" width="120">
+    </div>
+    <nav class="navbar row col-md-12 col-lg-9">
+      <div class="desktop__menu col-md col-lg align-items-center">
+        <ul class="desktop__menu-list d-flex gap-3">
+          <li class="desktop__menu-item">
             <a class="" href="#">Features</a>
           </li>
 
-          <li class="navbar__item">
+          <li class="desktop__menu-item">
             <a class="" href="#">Pricing</a>
           </li>
 
-          <li class="navbar__item">
+          <li class="desktop__menu-item">
             <a class="" href="#">Resources</a>
           </li>
         </ul>
-      </nav>
-      <div class="auth col-lg-3 d-flex gap-2 justify-content-end">
-        <a class="auth__login btn py-2 px-4" href="#">Login</a>
-        <a class="auth__register btn p-2 px-4" href="#">Sign Up</a>
+
+        <div class="auth d-flex gap-2 justify-content-end">
+          <a class="auth__login btn py-2 px-4" href="#">Login</a>
+          <a class="auth__register btn p-2 px-4" href="#">Sign Up</a>
+        </div>
       </div>
-    </header>
-    <!-- Main Section Starts Here  -->
-    <main class="main row section align-items-center justify-content-center" id="main">
-      <div class="main__content col-12 col-lg-7 d-flex flex-column justify-content-center">
-        <h1 class="main__title">More than just shorter links</h1>
-        <p class="main__description mb-5">
-          Build your brand’s recognition and get detailed insights 
-          on how your links are performing.
-        </p>
-        <button class="main__button btn py-3 px-4" type="button">
-          Get Started
-        </button>
+
+      <div class="mobile__menu p-1">
+        <input type="checkbox" class="mobile__menu-checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="mobile__menu-icon">&#9776;</label>
+        <ul class="mobile__menu-list mobile__wrap">
+          <li class="mobile__menu-item"><a href="#">Inicio</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
       </div>
-      
-      <picture class="main__image col-12 col-lg-5">
-        <img src="/assets/images/illustration-working.webp" alt="Working desk illustration" width="700">
-      </picture>
-    </main>
+    </nav>
 
-    <!-- URL Entry Section Starts Here -->
+  </header>
 
-    <section class="shortener" id="shortener">
-        <form action="/" class="shortener__form d-flex justify-content-center gap-4">
-          <input class="shortener__input py-3 px-3" id="shortInput" type="text" name="shortener" placeholder="Shorten a link here...">
-          <button class="shortener__button py-3 px-5" type="submit"> Shorten It!</button>
-        </form>
-    </section>
+  <!-- Main Section Starts Here  -->
 
-    <!-- Feature Section Starts Here -->
+  <main class="main row col col-lg-10 mx-auto align-items-center justify-content-between overflow-hidden" id="main">
+    <div class="main__content col-12 col-lg-6 d-flex flex-column justify-content-center ">
+      <h1 class="main__title">More than just shorter links</h1>
+      <p class="main__description mb-5">
+        Build your brand’s recognition and get detailed insights
+        on how your links are performing.
+      </p>
+      <button class="main__button btn py-3 px-4" type="button">
+        Get Started
+      </button>
+    </div>
 
+    <picture class="main__image col-12 col-lg-5">
+      <img src="/assets/images/illustration-working.webp" alt="Working desk illustration" width="600">
+    </picture>
+  </main>
 
-    <!-- Modernizr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <!-- URL Entry Section Starts Here -->
 
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
-    <!-- Your custom scripts -->
-    <script src="./js/main.js" type="module"></script>
-  </body>
+  <section class="shortener section-py row justify-content-center mx-auto" id="shortener">
+    <form action="/" class="shortener__form row col col-lg-10 justify-content-center gap-4">
+      <input class="shortener__input col-12 col-md-12 col-lg-9 py-3 px-4" id="shortInput" type="text" name="shortener"
+        placeholder="Shorten a link here...">
+      <button class="shortener__button col-12 col-md-12 col-lg-2 py-3 px-3" type="submit"> Shorten It!</button>
+    </form>
+  </section>
+
+  <!-- Features Section Starts Here -->
+  <section class="features col-12 col-md-12 col-lg-12 d-flex flex-column align-items-center">
+    <div class="features__inner col col-lg-5 text-center px-2">
+      <h2 class="features__title">Advanced Statistics</h2>
+      <p class="features__description">Track how your links are performing across the web with our
+        advanced statistics dashboard.</p>
+    </div>
+
+    <div class="tabs row col-12 col-md-10 col-lg-10 section-py justify-content-center align-items-start gap-5">
+      <div class="tabs__item position-relative">
+        <div class="tabs__line position-absolute"></div>
+        <img src="./assets/images/icon-brand-recognition.webp" alt="Tab Recognition image"
+          class="tabs__image rounded-pill" width="85">
+        <h3 class="tabs__title">Brand Recognition</h3>
+        <p class="tabs__description">Boost your brand recognition with each click. Generic links don’t
+          mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+
+      <div class="tabs__item align-self-center position-relative">
+        <!-- <div class="tabs__line tabs__line--position position-absolute start-100"></div> -->
+        <img src="./assets/images/icon-detailed-records.webp" alt="Tab image" class="tabs__image rounded-pill"
+          width="85">
+        <h3 class="tabs__title">Detailed Records</h3>
+        <p class="tabs__description">Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.</p>
+      </div>
+
+      <div class="tabs__item align-self-end position-relative">
+        <img src="./assets/images/icon-fully-customizable.webp" alt="Tab image" class="tabs__image rounded-pill"
+          width="85">
+        <h3 class="tabs__title">Fully Customizable</h3>
+        <p class="tabs__description">Improve brand awareness and content discoverability through customizable
+          links, supercharging audience engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modernizr -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Your custom scripts -->
+  <script src="./js/main.js" type="module"></script>
+</body>
+
 </html>

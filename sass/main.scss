@@ -12,40 +12,80 @@
  */
 
 .header {
-    padding: 3.7rem 0;
-    .navbar {
-        &__item {
+    padding-top: 3.7rem;
+    padding-bottom: 3.7rem;
+
+    .desktop__menu {
+            display: flex;
+            justify-content: space-between;
+        &-item {
             a {
                 color: $grayish-violet;
                 font-weight: $font-weight-2;
             }
         }
+
+        .auth {
+
+            &__login,
+            &__register {
+                font-weight: $font-weight-2;
+            }
+    
+            &__login {
+                color: $grayish-violet;
+            }
+    
+            &__register {
+                background-color: $primary-;
+                border-radius: 40px;
+                color: $white;
+            }
+        }
     }
 
-    .auth {
+    
 
-        &__login, &__register {
-            font-weight: $font-weight-2;
+    .mobile__menu {
+        display: none;
+    }
+
+    @media (max-width: 980){
+        .navbar {
+            .desktop__menu {
+                justify-content: flex-end;
+            }
         }
-        &__login {
-            color: $grayish-violet;
+    }
+    @media (max-width: 768px) {
+        .desktop__menu {
+                display: none;
         }
-        &__register {
-            background-color: $primary-;
-            border-radius: 40px;
-            color: $white;
+
+        .mobile__menu {
+            display: flex;
+
+            &-checkbox {
+                display: none;
+
+                &:checked+&-icon+&-list.mobile__wrap {
+                    display: flex;
+                }
+            }
         }
+
     }
 }
 
 
- /**
+
+/**
  * Main Section Styles Starts Here -------------/
  */
 
 .main {
-    &__content {
-    }
+    &__content {}
+
     &__title {
         color: $very-dark-blue;
         font-size: 4.6rem;
@@ -60,6 +100,7 @@
 
     &__image {
         position: relative;
+
         // overflow: hidden;
         img {
             // position: absolute;
@@ -77,26 +118,33 @@
         width: 100%;
         max-width: 200px;
     }
+
+    @include mediaQuery($breakpoint-desktop) {
+        & *> {
+            background-color: red;
+        }
+    }
 }
 
 
- /**
+/**
  * URL Entry Section Styles Starts Here -------------/
  */
 
 .shortener {
-    position: relative;
+    background: linear-gradient(to bottom, $white 50%, $gray-light 50%);
+
     &__form {
-        position: absolute;
         background-color: $primary--;
         background-image: url("../assets/images/bg-shorten-desktop.svg");
-        background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
         border-radius: 20px;
-        padding: 3.5rem 2rem;
-        width: 100%;
+        padding: 3.5rem 3rem;
     }
 
-    &__input, &__button {
+    &__input,
+    &__button {
         font-size: 1.2rem;
     }
 
@@ -104,9 +152,6 @@
         background-color: $white;
         border-radius: 10px;
         color: $very-dark-violet;
-        width: 100%;
-        max-width: 70%;
-        z-index: 10;
     }
 
     &__button {
@@ -114,20 +159,97 @@
         border-radius: 10px;
         color: $white;
         font-weight: $font-weight-2;
-        
+        // padding: 1rem 2rem;
     }
 }
 
 
 
- /**
+/**
  * Feature Section Styles Starts Here -------------/
  */
 
+.features {
+    background-color: $gray-light;
+
+    &__inner {}
+
+    ;
+
+    &__title {
+        color: $very-dark-blue;
+    }
+
+    &__description {}
+
+    .tabs {
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        // gap: 1.4rem;
+        width: 100%;
+        height: 100%;
+        min-height: 500px;
+
+        &__item {
+            flex: 0 0 360px;
+            border-radius: 10px;
+            background-color: $white;
+            padding: 4rem 1.8rem 3rem 1.8rem;
+            z-index: 9;
+
+            // &:nth-child(2){
+            //     margin-top: 4rem;
+            // }
+
+            // &:nth-child(3){
+            //     margin-top: 8rem;
+            // }
+        }
+
+        &__line {
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 10px;
+            background-color: $primary-;
+            z-index: 1;
+        }
 
 
+        &__image {
+            position: absolute;
+            padding: 1.5rem;
+            top: 0;
+            left: 0;
+            transform: translate(40px, -40px);
+            background-color: $primary--;
+        }
 
- /**
+        &__title {
+            color: $very-dark-blue;
+            font-size: 1.3rem;
+            font-weight: $font-weight-2;
+            margin-bottom: .8rem;
+        }
+
+        &__description {
+            font-size: 1rem;
+        }
+
+        @include mediaQuery(phone) {
+            &__line {
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -50%);
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+
+/**
  * CTA Section Styles Starts Here -------------/
  */
 
@@ -135,6 +257,6 @@
 
 
 
- /**
+/**
  * Footer Section Styles Starts Here -------------/
  */

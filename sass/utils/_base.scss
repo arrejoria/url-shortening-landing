@@ -8,7 +8,7 @@ html {
   // background-color: gray;
   font-size: 62.5%; // makes 1rem = 10px
   scroll-behavior: smooth;
-  min-height: 100vh;
+  // min-height: 100vh;
   @media only screen and (min-width: $breakpoint-desktop) {
     font-size: 70%;
   }
@@ -29,18 +29,29 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  overflow: hidden;
-
-  height: 100vh;
 }
-
 
 .body-container {
   margin: 0 auto;
-  padding: 0 10vw;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+
+}
+.section-center {
+  margin: 0 auto;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  overflow-x: hidden;
+}
+.section-py {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.section {
-  padding: 5rem 0;
+@media (max-width: 740px) {
+  .section-center {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
