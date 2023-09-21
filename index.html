@@ -56,21 +56,22 @@
 
 <body class="body-container">
 
-  <header class="header row col-12 col-md-10 col-lg-10 flex align-items-center mx-auto" id="header">
-    <div class="logo col-10 col-md col-lg-2 d-flex">
+  <header class="header row col-12 col-md-10 col-lg-10 flex align-items-center mx-auto  position-relative" id="header">
+
+    <div class="logo col col-md col-lg-2 d-flex">
       <img src="./assets/images/logo.webp" alt="Web Logo Image" width="120">
     </div>
-    <nav class="navbar row col-md-12 col-lg-9">
+
+    <nav class="menu row col-md-12 col-lg-9">
       <div class="desktop__menu col-md col-lg align-items-center">
+
         <ul class="desktop__menu-list d-flex gap-3">
           <li class="desktop__menu-item">
             <a class="" href="#">Features</a>
           </li>
-
           <li class="desktop__menu-item">
             <a class="" href="#">Pricing</a>
           </li>
-
           <li class="desktop__menu-item">
             <a class="" href="#">Resources</a>
           </li>
@@ -82,16 +83,21 @@
         </div>
       </div>
 
-      <div class="mobile__menu p-1">
+      <div class="mobile__menu col-11 col-md-3 mt-3 mx-auto flex-column justify-content-center align-items-center px-2 py-5 text-center">
         <input type="checkbox" class="mobile__menu-checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="mobile__menu-icon">&#9776;</label>
+        <label for="menu-toggle" class="mobile__menu-icon position-absolute">&#9776;</label>
         <ul class="mobile__menu-list mobile__wrap">
-          <li class="mobile__menu-item"><a href="#">Inicio</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Resources</a></li>
+          <li class="mobile__menu-item"><a href="#">Features</a></li>
+          <li class="mobile__menu-item"><a href="#">Pricing</a></li>
+          <li class="mobile__menu-item"><a href="#">Resources</a></li>
         </ul>
+        <hr class="divider solid col-10 col-md-10 w-100 mx-4">
+        <div class="auth d-flex gap-2 flex-column justify-content-center w-100 px-2">
+          <a class="auth__login btn py-2 px-5" href="#">Login</a>
+          <a class="auth__register btn py-2 px-5" href="#">Sign Up</a>
+        </div>
       </div>
+
     </nav>
 
   </header>
