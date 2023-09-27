@@ -52,6 +52,7 @@
   <link rel="stylesheet" href="./css/normalize.css" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/main.css" />
+
 </head>
 
 <body class="body-container">
@@ -62,7 +63,7 @@
       <img src="./assets/images/logo.webp" alt="Web Logo Image" width="120">
     </div>
 
-    <nav class="menu row col-md-12 col-lg-9">
+    <nav class="nav row col-12 col-md-12 col-lg-9 mx-auto px-0">
       <div class="desktop__menu col-md col-lg align-items-center">
 
         <ul class="desktop__menu-list d-flex gap-3">
@@ -83,18 +84,20 @@
         </div>
       </div>
 
-      <div class="mobile__menu col-11 col-md-3 mt-3 mx-auto flex-column justify-content-center align-items-center px-2 py-5 text-center">
+      <div class="mobile__menu col col-md-3">
         <input type="checkbox" class="mobile__menu-checkbox" id="menu-toggle">
         <label for="menu-toggle" class="mobile__menu-icon position-absolute">&#9776;</label>
-        <ul class="mobile__menu-list mobile__wrap">
-          <li class="mobile__menu-item"><a href="#">Features</a></li>
-          <li class="mobile__menu-item"><a href="#">Pricing</a></li>
-          <li class="mobile__menu-item"><a href="#">Resources</a></li>
-        </ul>
-        <hr class="divider solid col-10 col-md-10 w-100 mx-4">
-        <div class="auth d-flex gap-2 flex-column justify-content-center w-100 px-2">
-          <a class="auth__login btn py-2 px-5" href="#">Login</a>
-          <a class="auth__register btn py-2 px-5" href="#">Sign Up</a>
+        <div class="mobile__menu-content col flex-column justify-content-center align-items-center mt-3 px-4 py-5 text-center">
+          <ul class="mobile__menu-list mobile__wrap d-flex flex-column gap-3">
+            <li class="mobile__menu-item"><a href="#">Features</a></li>
+            <li class="mobile__menu-item"><a href="#">Pricing</a></li>
+            <li class="mobile__menu-item"><a href="#">Resources</a></li>
+          </ul>
+          <hr class="divider solid col col-md px-5 mx-auto">
+          <div class="auth col col-md d-flex gap-3 flex-column justify-content-center w-100">
+            <a class="auth__login btn py-2 px-5" href="#">Login</a>
+            <a class="auth__register btn py-2 px-5" href="#">Sign Up</a>
+          </div>
         </div>
       </div>
 

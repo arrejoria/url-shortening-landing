@@ -20,8 +20,14 @@
     }
   }
 
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+
   @if $breakpoint == desktop {
-    @media only screen and (min-width: $breakpoint-desktop) {
+    @media only screen and (max-width: $breakpoint-desktop) {
       @content;
     }
   }
