@@ -107,8 +107,8 @@
 
   <!-- Main Section Starts Here  -->
 
-  <main class="main row col col-lg-10 mx-auto align-items-center justify-content-between overflow-hidden" id="main">
-    <div class="main__content col-12 col-lg-6 d-flex flex-column justify-content-center ">
+  <main class="main row col col-md-11 col-lg-10 mx-auto align-items-center justify-content-between overflow-hidden" id="main">
+    <div class="main__content col-12 col-md col-lg-6 d-flex flex-column justify-content-center ">
       <h1 class="main__title">More than just shorter links</h1>
       <p class="main__description mb-5">
         Build your brand’s recognition and get detailed insights
@@ -119,7 +119,7 @@
       </button>
     </div>
 
-    <picture class="main__image col-12 col-lg-5">
+    <picture class="main__image col-12 col-md-5 col-lg-5">
       <img src="/assets/images/illustration-working.webp" alt="Working desk illustration" width="600">
     </picture>
   </main>
@@ -127,11 +127,19 @@
   <!-- URL Entry Section Starts Here -->
 
   <section class="shortener section-py row justify-content-center mx-auto" id="shortener">
-    <form action="/" class="shortener__form row col col-lg-10 justify-content-center gap-4">
+    <form action="/" class="shortener__form row col-11 col-md-11 col-lg-10 justify-content-center gap-4">
       <input class="shortener__input col-12 col-md-12 col-lg-9 py-3 px-4" id="shortInput" type="text" name="shortener"
         placeholder="Shorten a link here...">
       <button class="shortener__button col-12 col-md-12 col-lg-2 py-3 px-3" type="submit"> Shorten It!</button>
     </form>
+
+    <ul class="shortener__list col-11 col-md-11 col-lg-10" id="urlList">
+      <li class="shortener__item url">
+        <span class="url__large">https://www.shortenerurlexample.com/example/short-01</span>
+        <span class="url__short">https://rel.ink/g0sa2</span>
+        <button class="url__button" type="button">Copy</button>
+      </li>
+    </ul>
   </section>
 
   <!-- Features Section Starts Here -->

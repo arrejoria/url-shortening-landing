@@ -146,8 +146,7 @@
         position: relative;
 
         img {
-            left: 0;
-            top: 0;
+            margin: auto;
         }
     }
 
@@ -206,7 +205,6 @@
         background-color: $primary--;
         background-image: url("../assets/images/bg-shorten-desktop.svg");
         background-size: cover;
-        /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
         border-radius: 20px;
         padding: 3.5rem 3rem;
     }
@@ -228,6 +226,15 @@
         color: $white;
         font-weight: $font-weight-2;
         // padding: 1rem 2rem;
+    }
+
+    &__list {
+        background-color: $white;
+    }
+    @include mediaQuery(tablet){
+        &__form {
+            padding: 2rem;
+        }
     }
 }
 

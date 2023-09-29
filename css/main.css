@@ -289,8 +289,7 @@ h6 {
   position: relative;
 }
 .main__image img {
-  left: 0;
-  top: 0;
+  margin: auto;
 }
 .main__button {
   background-color: hsl(180deg, 66%, 49%);
@@ -335,7 +334,6 @@ h6 {
   background-color: hsl(257deg, 27%, 26%);
   background-image: url("../assets/images/bg-shorten-desktop.svg");
   background-size: cover;
-  /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
   border-radius: 20px;
   padding: 3.5rem 3rem;
 }
@@ -352,6 +350,14 @@ h6 {
   border-radius: 10px;
   color: #fff;
   font-weight: 700;
+}
+.shortener__list {
+  background-color: #fff;
+}
+@media only screen and (max-width: 48em) {
+  .shortener__form {
+    padding: 2rem;
+  }
 }
 
 /**
