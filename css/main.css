@@ -327,7 +327,7 @@ h6 {
 /**
  * URL Entry Section Styles Starts Here -------------/
  */
-.shortener {
+.shortener--bg {
   background: linear-gradient(to bottom, #fff 50%, #f0f1f6 50%);
 }
 .shortener__form {
@@ -344,6 +344,7 @@ h6 {
   background-color: #fff;
   border-radius: 10px;
   color: hsl(260deg, 8%, 14%);
+  cursor: text;
 }
 .shortener__button {
   background-color: hsl(180deg, 66%, 49%);
@@ -352,11 +353,67 @@ h6 {
   font-weight: 700;
 }
 .shortener__list {
+  background-color: #f0f1f6;
+}
+.shortener__list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
   background-color: #fff;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  padding: 1rem 1.25rem;
+  margin-top: 1.25rem;
+}
+.shortener__list li > * {
+  padding: 1rem 0;
+}
+.shortener__list li span:nth-of-type(1) {
+  color: hsl(260deg, 8%, 14%);
+  flex: 3 2 auto;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.shortener__list li span:nth-of-type(2) {
+  color: hsl(180deg, 66%, 49%);
+  flex: 1 1 auto;
+  text-align: center;
+}
+.shortener__list li button {
+  background-color: hsl(180deg, 66%, 49%);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  flex: 1 0 50px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.shortener__list li button:hover {
+  filter: saturate(40%) brightness(120%);
+}
+.shortener__list li button:active {
+  background-color: hsl(257deg, 27%, 26%);
+}
+.shortener__list li button.active {
+  background-color: hsl(257deg, 27%, 26%);
 }
 @media only screen and (max-width: 48em) {
   .shortener__form {
     padding: 2rem;
+  }
+  .shortener__list .shortener__item span:nth-of-type(1) {
+    color: hsl(260deg, 8%, 14%);
+    flex: 3 2 auto;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+  .shortener__list .shortener__item span:nth-of-type(2) {
+    border-top: 1px solid #f0f1f6;
+    color: hsl(180deg, 66%, 49%);
+    flex: 1 1 100%;
+    text-align: center;
   }
 }
 

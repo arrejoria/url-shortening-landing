@@ -87,7 +87,8 @@
       <div class="mobile__menu col col-md-3">
         <input type="checkbox" class="mobile__menu-checkbox" id="menu-toggle">
         <label for="menu-toggle" class="mobile__menu-icon position-absolute">&#9776;</label>
-        <div class="mobile__menu-content col flex-column justify-content-center align-items-center mt-3 px-4 py-5 text-center">
+        <div
+          class="mobile__menu-content col flex-column justify-content-center align-items-center mt-3 px-4 py-5 text-center">
           <ul class="mobile__menu-list mobile__wrap d-flex flex-column gap-3">
             <li class="mobile__menu-item"><a href="#">Features</a></li>
             <li class="mobile__menu-item"><a href="#">Pricing</a></li>
@@ -107,7 +108,8 @@
 
   <!-- Main Section Starts Here  -->
 
-  <main class="main row col col-md-11 col-lg-10 mx-auto align-items-center justify-content-between overflow-hidden" id="main">
+  <main class="main row col col-md-11 col-lg-10 mx-auto align-items-center justify-content-between overflow-hidden"
+    id="main">
     <div class="main__content col-12 col-md col-lg-6 d-flex flex-column justify-content-center ">
       <h1 class="main__title">More than just shorter links</h1>
       <p class="main__description mb-5">
@@ -126,15 +128,22 @@
 
   <!-- URL Entry Section Starts Here -->
 
-  <section class="shortener section-py row justify-content-center mx-auto" id="shortener">
-    <form action="/" class="shortener__form row col-11 col-md-11 col-lg-10 justify-content-center gap-4">
-      <input class="shortener__input col-12 col-md-12 col-lg-9 py-3 px-4" id="shortInput" type="text" name="shortener"
-        placeholder="Shorten a link here...">
-      <button class="shortener__button col-12 col-md-12 col-lg-2 py-3 px-3" type="submit"> Shorten It!</button>
-    </form>
+  <section class="shortener section-py pb-0" id="shortener">
+    <div class="shortener--bg row justify-content-center mx-auto">
+      <form action="/" id="shortForm" class="shortener__form row col-11 col-md-11 col-lg-10 justify-content-center gap-4">
+        <input class="shortener__input col-12 col-md-12 col-lg-9 py-3 px-4" id="shortInput" type="text" name="shortener"
+          placeholder="Shorten a link here...">
+        <button class="shortener__button col-12 col-md-12 col-lg-2 py-3 px-3" type="submit"> Shorten It!</button>
+      </form>
+    </div>
 
-    <ul class="shortener__list col-11 col-md-11 col-lg-10" id="urlList">
-      <li class="shortener__item url">
+    <ul class="shortener__list d-flex flex-column align-items-center px-0" id="urlList">
+      <li class="shortener__item url col-11 col-md-11 col-lg-10">
+        <span class="url__large">https://www.shortenerurlexample.com/example/short-01</span>
+        <span class="url__short">https://rel.ink/g0sa2</span>
+        <button class="url__button" type="button">Copy</button>
+      </li>
+      <li class="shortener__item url col-11 col-md-11 col-lg-10">
         <span class="url__large">https://www.shortenerurlexample.com/example/short-01</span>
         <span class="url__short">https://rel.ink/g0sa2</span>
         <button class="url__button" type="button">Copy</button>
@@ -143,7 +152,7 @@
   </section>
 
   <!-- Features Section Starts Here -->
-  <section class="features col-12 col-md-12 col-lg-12 d-flex flex-column align-items-center">
+  <section class="features section-py col-12 col-md-12 col-lg-12 d-flex flex-column align-items-center">
     <div class="features__inner col col-lg-5 text-center px-2">
       <h2 class="features__title">Advanced Statistics</h2>
       <p class="features__description">Track how your links are performing across the web with our

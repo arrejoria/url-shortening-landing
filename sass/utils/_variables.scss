@@ -29,9 +29,9 @@ $font-weight-2: 700;
 
 
 // Breakpoint Sass Variables
-$breakpoint-mobile: 37.5em;
-$breakpoint-tablet: 48em;
-$breakpoint-desktop: 90em;
+$breakpoint-mobile: 37.5em; // 600px
+$breakpoint-tablet: 48em; // 768px
+$breakpoint-desktop: 90em; // 1440px
 $breakpoint-desktop-medium: 105em;
 $breakpoint-desktop-large: 120em;
 $breakpoint-desktop-xlarge: 160em;
