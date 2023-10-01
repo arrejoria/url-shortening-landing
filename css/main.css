@@ -355,7 +355,7 @@ h6 {
 .shortener__list {
   background-color: #f0f1f6;
 }
-.shortener__list li {
+.shortener__item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -367,52 +367,52 @@ h6 {
   padding: 1rem 1.25rem;
   margin-top: 1.25rem;
 }
-.shortener__list li > * {
+.shortener__item > * {
   padding: 1rem 0;
 }
-.shortener__list li span:nth-of-type(1) {
+.shortener .url__large {
   color: hsl(260deg, 8%, 14%);
   flex: 3 2 auto;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
-.shortener__list li span:nth-of-type(2) {
+.shortener .url__short {
   color: hsl(180deg, 66%, 49%);
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   text-align: center;
 }
-.shortener__list li button {
+.shortener .url__button {
   background-color: hsl(180deg, 66%, 49%);
   border-radius: 5px;
   color: #fff;
   font-size: 1rem;
-  flex: 1 0 50px;
+  flex: 0 0 50px;
   padding: 0.5rem 1rem;
   text-align: center;
 }
-.shortener__list li button:hover {
+.shortener .url__button:hover {
   filter: saturate(40%) brightness(120%);
 }
-.shortener__list li button:active {
+.shortener .url__button:active {
   background-color: hsl(257deg, 27%, 26%);
 }
-.shortener__list li button.active {
+.shortener .url__button.active {
   background-color: hsl(257deg, 27%, 26%);
 }
 @media only screen and (max-width: 48em) {
   .shortener__form {
     padding: 2rem;
   }
-  .shortener__list .shortener__item span:nth-of-type(1) {
+  .shortener__list .url__large {
     color: hsl(260deg, 8%, 14%);
     flex: 3 2 auto;
     overflow-x: hidden;
     text-overflow: ellipsis;
   }
-  .shortener__list .shortener__item span:nth-of-type(2) {
+  .shortener__list .url__short {
     border-top: 1px solid #f0f1f6;
     color: hsl(180deg, 66%, 49%);
-    flex: 1 1 100%;
+    flex: 0 0 100%;
     text-align: center;
   }
 }
@@ -438,15 +438,6 @@ h6 {
   padding: 4rem 1.8rem 3rem 1.8rem;
   z-index: 9;
 }
-.features .tabs__line {
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  height: 10px;
-  background-color: hsl(180deg, 66%, 49%);
-  z-index: 1;
-}
 .features .tabs__image {
   position: absolute;
   padding: 1.5rem;
@@ -464,15 +455,6 @@ h6 {
 .features .tabs__description {
   font-size: 1rem;
 }
-@media only screen and (max-width: 37.5em) {
-  .features .tabs__line {
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    transform: rotate(90deg);
-  }
-}
-
 /**
  * CTA Section Styles Starts Here -------------/
  */
